@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Starts deingena script.
+#
+
+
+start() { 
+        chmod -R 777 /workspace/init_script.sh
+        sh /workspace/init_script.sh
+}
+stop() {
+}
+restart() {
+        stop
+        start
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+
