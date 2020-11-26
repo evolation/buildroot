@@ -4,22 +4,31 @@
 #
 
 
-start() { 
-        chmod -R 777 /workspace/init_script.sh
-        sh /workspace/init_script.sh
+start() {
+	chmod -R 777 /workspace/init_script.sh
+	sh /workspace/init_script.sh
 }
 stop() {
+	chmod -R 777 /workspace/init_script.sh
 }
 restart() {
-        stop
-        start
+	stop
+	start
 }
 
 case "$1" in
   start)
-        start
-        ;;
+  	start
+	;;
   stop)
-        stop
-        ;;
+  	stop
+	;;
+  restart|reload)
+  	restart
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
 
+exit $?
