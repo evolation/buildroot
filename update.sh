@@ -8,6 +8,6 @@ git add /home/integreedy/workspace/buildroot/evolation_configs/buildroot_deingen
 
 git add /home/integreedy/workspace/buildroot/evolation_configs/NGjex_deingena_latest.config
 
-git commit -m "update configs"
+git commit -m "$1"
 
 git push
