@@ -2017,6 +2017,7 @@ menu "Miscellaneous"
 	source "package/taskd/Config.in"
 	source "package/wine/Config.in"
 	source "package/xutil_util-macros/Config.in"
+	source "package/libquirc/Config.in"
 endmenu
 
 menu "Networking applications"
@@ -2478,6 +2479,5 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
-source "package/libquirc/Config.in"
 
 endmenu

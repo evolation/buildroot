@@ -1,9 +1,6 @@
-menu "deingena"
 config BR2_PACKAGE_LIBQUIRC
         bool "libquirc"
         help
           Reading QR code from video
 
           https://github.com/evolation/libquirc.git/
-
-endmenu
